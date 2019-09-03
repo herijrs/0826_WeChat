@@ -1,0 +1,48 @@
+<!--pages/list/list.wxml-->
+<import src="../component/news/news.wxml"></import>
+
+
+<!-- scroll导航 -->
+<view class="tab">
+  <scroll-view class="nav" scroll-x="true" scroll-left="{{scrollLeft}}">
+      <block wx:for="{{allTitle}}" wx:for-index="idx" wx:key="idex">
+        <view class="nav-item {{currentIndex==idx ? 'active' : ''}}" data-current="{{idx}}" bindtap="changeTitle">
+         {{item.title}}</view>
+      </block>
+  </scroll-view>
+</view>
+
+
+<!-- 搜索框 -->
+<view class='sousuo' bindtap='bindSearchBook' >
+  <image src='../../pic/shouye/sousuo.png'></image>
+</view>
+
+<!-- 通知栏的模板 -->
+<view class='templateNews'>
+  <template is="theNews" data="{{msgList}}"></template>
+</view> 
+
+<!-- 首页的轮播图 -->
+<view>
+  <swiper indicator-dots="{{indicatorDots}}"autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" model="widthFix" style="width: {{imageWidth}}px;" />
+    </swiper-item>
+  </block>
+  </swiper>
+</view>
+
+<!-- 物品展示 -->
+<block wx:for="{{datalist}}" wx:key="item">
+<view class="item-container">
+  <text class="item-name">上传人：{{item.name}}</text>
+  <text class="item-name">上传时间：{{item.time}}</text>
+  <image class="img" src="{{item.imgUrl}}"></image>
+</view>
+</block>
+
+<!-- <button bindtap="remove">删除测试</button> -->
+
+

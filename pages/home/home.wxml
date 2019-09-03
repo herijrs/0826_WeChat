@@ -1,0 +1,3 @@
+<!--pages/home/home.wxml-->
+<button bindtap="upload">上传图片</button>
+<image src='{{imgUrl}}'></image>

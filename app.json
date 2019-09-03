@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/list/list",
+    "pages/home/home",
+    "pages/my/my",
+    "pages/search-book/search-book",
+    "pages/component/news/news",
+    "pages/my/mymessage/mymessage"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#20f3a4",
+    "navigationBarTitleText": "大自然的搬运工",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#000000",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "pic/shouye/2.png",
+        "iconPath": "pic/shouye/2.png",
+        "pagePath": "pages/list/list",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "pic/shouye/0.png",
+        "iconPath": "pic/shouye/0.png",
+        "pagePath": "pages/home/home",
+        "text": "发布"
+      },
+      {
+        "selectedIconPath": "pic/shouye/1.png",
+        "iconPath": "pic/shouye/1.png",
+        "pagePath": "pages/my/my",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

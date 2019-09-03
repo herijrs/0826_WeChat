@@ -1,0 +1,14 @@
+<!--pages/my/my.wxml-->
+
+<view class="container">
+  <view class="user-info-box">
+    <view class="info-hd">
+      <block>
+        <image class="avatar" src='{{userInfo.avatarUrl}}'></image>
+          <view class="user-title">
+            <view class="nickname">{{userInfo.nickName}}</view>
+          </view>
+      </block>
+  </view>
+ </view>
+</view>
